@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+    <title>My Docs</title>
+    
+
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.js"></script>
+        <link rel="stylesheet" href="../css/bootstrap.css">
+        <script src="/static/js/libs/jquery-3.3.1.js"></script>
+        <link rel="stylesheet" href="/static/css/my_docs.css">
+
+    <script src="/static/js/libs/bootstrap.js"></script>
+    <script src="/static/js/my_docs.js"></script>
+    <script src="/static/js/logout.js"></script>
+
+</head>
+
+<div class="pos-f-t">
+  <div class="collapse" id="navbarToggleExternalContent">
+    <div class="bg-dark p-4">
+      <center>
+        <button type="button" class="btn btn-light" onclick="go_upload()">Regresar</button>
+        <button type="button" class="btn btn-light" onclick="logout()">Log Out</button> 
+      </center>
+    </div>
+  </div>
+  <nav class="navbar navbar-dark bg-dark">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </nav>
+</div>
+
+<body onload="get_received()">
+  <div class="container">
+    <div class="row justify-content-center">
+        <div class="col-lg-10">
+            <div class="banner-content text-center">
+              <br>
+                <h1 class="title">My Docs</h1>
+                <p class="lead">Revisa los archivos que recibiste o enviaste</p>
+                <div id="title">
+
+                </div>
+              
+                <h2>Archivos Recibidos</h2>
+                <table class="table table-dark" id = "received_table">
+                    
+                </table>
+                <div id="status_received">
+                    </div>
+                    <br>
+                  <h2>Archivos Enviados</h2>
+                <table class="table table-dark" id = "sent_table">
+                
+                </table>
+                <div id="status_sent">
+                    </div>
+
+               
+                
+            </div>
+
+        </div>
+    </div>
+</div>
+</body>
+
